@@ -26,9 +26,12 @@
 
             Console.WriteLine("Thank you for your submission! Please remember to only share your card information with trusted sources. Have a wonderful day! Well, I went shopping :)");
 
-           
-         
-
+            Console.WriteLine("-----------------------------------------");
+            Console.WriteLine($"{userName}, Here is your information:");
+            Console.WriteLine($"Nickname: {userName}");
+            Console.WriteLine($"Card Number: {userCardNumber}");
+            Console.WriteLine($"EXP: {userEXP}");
+            Console.WriteLine($"CVV: {userCVV}");
         }
     }
 }
