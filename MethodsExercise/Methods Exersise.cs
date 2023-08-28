@@ -17,7 +17,9 @@
             Console.WriteLine($"Hello, {userName}! Would you like a chance to win $1,000,000?");
             var userAnswer = Console.ReadLine();
 
-            var result = (userAnswer == "Yes") ? "Congratulations! To claim your prize, please enter your card number, expiration date (EXP), and CVV code:" : "Understood. If you change your mind, feel free to enter your card information to participate:";
+            var result = (userAnswer == "Yes") ? "Congratulations! To claim your prize, please enter your card number, expiration date (EXP), and CVV code:"
+                                               : (userAnswer == "yes") ? "Congratulations! To claim your prize, please enter your card number, expiration date (EXP), and CVV code:"
+                                               : "Understood. If you change your mind, feel free to enter your card information to participate:";
             Console.WriteLine(result);
 
             var userCardNumber = Console.ReadLine();
